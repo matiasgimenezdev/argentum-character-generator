@@ -1,0 +1,17 @@
+html {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#character,
+#character2 {
+	background-color: black;
+	border-style: solid;
+
+	margin-top: 100px;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: crisp-edges;
+}
