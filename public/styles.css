@@ -6,17 +6,24 @@ html {
 
 #character {
 	background-color: black;
-	border-style: solid;
-
-	margin-top: 100px;
 	image-rendering: -moz-crisp-edges;
 	image-rendering: -webkit-crisp-edges;
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
+	border-style: solid;
+	margin-top: 100px;
 }
 
-#name {
-	width: 200px;
+#form {
+	display: flex;
+	flex-direction: column;
+}
+
+#name,
+#clan {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width: 95px;
 	height: 1.5rem;
 	color: black;
 }
@@ -24,6 +31,6 @@ html {
 #generator {
 	background-color: black;
 	color: white;
-	width: 77px;
+	width: 103px;
 	height: 1.5rem;
 }

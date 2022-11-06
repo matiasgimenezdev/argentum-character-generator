@@ -1,15 +1,15 @@
-const random = () => {
-	return Math.floor(Math.random() * 10);
+const random = (max) => {
+	return Math.floor(Math.random() * max);
 };
 
 class Character {
 	getCharacter = () => {
 		return {
-			body: random(),
-			head: random(),
-			helmet: random(),
-			weapon: random(),
-			shield: random(),
+			body: random(10),
+			head: random(10),
+			helmet: 0,
+			weapon: random(3),
+			shield: random(4),
 		};
 	};
 }
