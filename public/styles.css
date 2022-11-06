@@ -4,8 +4,7 @@ html {
 	justify-content: center;
 }
 
-#character,
-#character2 {
+#character {
 	background-color: black;
 	border-style: solid;
 
@@ -14,4 +13,17 @@ html {
 	image-rendering: -webkit-crisp-edges;
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
+}
+
+#name {
+	width: 200px;
+	height: 1.5rem;
+	color: black;
+}
+
+#generator {
+	background-color: black;
+	color: white;
+	width: 77px;
+	height: 1.5rem;
 }
