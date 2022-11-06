@@ -34,14 +34,18 @@ const loadImage = async (base, index) => {
 	});
 };
 
+document.addEventListener('DOMContentLoad', () => {
+	canvas.style.zoom = 150;
+});
+
 generator.addEventListener('click', async () => {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.font = '10px Arial';
 	ctx.fillStyle = '#5CFF5C';
 	ctx.textAlign = 'center';
-	ctx.fillText(characterName.value, 50, 85);
+	ctx.fillText(characterName.value, 75, 110);
 	if (clanName.value) {
-		ctx.fillText(`<${clanName.value}>`, 50, 94);
+		ctx.fillText(`<${clanName.value}>`, 75, 120);
 	}
 
 	const character = await getCharacter();
@@ -95,7 +99,7 @@ generator.addEventListener('click', async () => {
 		drawHeadOption.y,
 		drawHeadOption.width,
 		drawHeadOption.height,
-		1,
+		1.3,
 		-15
 	);
 
